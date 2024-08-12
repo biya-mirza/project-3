@@ -1,0 +1,146 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.background {
+  background-image: url(background-image.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 4rem;
+ 
+}
+
+.box {
+  height: 50rem;
+  width: 80%;
+  background-color: #0f4154;
+  border: 0.5rem solid #145c72;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3.5rem;
+  box-shadow: rgb(21 21 22)0px 20px 30px -10px;
+}
+
+.content {
+  color:#080808;
+  text-align: center;
+}
+.content h2 {
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 80%;
+}
+.content h1 {
+  font-size: 9.6rem;
+  font-weight: 600;
+  line-height: 90%;
+}
+
+input {
+  width: 92%;
+  height: 42px;
+  margin: 12px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  text-indent: 20px;
+  border-radius: 18px;
+  transition: transform 1s;
+  margin-top: 20px;
+}
+input::placeholder {
+  color: #737373;
+  font-size: 1.6rem;
+  padding-left: 30px;
+}
+input:focus-visible {
+  outline: 2px solid #145c72;
+  border: 2px solid #145c72;
+}
+input:hover{
+    transform: perspective(200px) rotateY('10deg');
+}
+
+.primary-btn {
+  font-size: 2.4rem;
+  width: 16rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #145c72;
+  color: white;
+  border: none;
+  margin-left: 22rem;
+  margin-top: 2rem;
+}
+.primary-btn:hover {
+  opacity: 0.9;
+}
+.primary-btn:active {
+  opacity: 1;
+  background-color: #00a0d1;
+}
+.result {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media (max-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+  .box {
+    width: 70%;
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    width: 100%;
+  }
+  .box {
+    width: 90%;
+    height: 54rem;
+  }
+  .calculate-form button {
+    grid-column: 1/2;
+  }
+  .content h1 {
+    font-size: 5rem;
+  }
+  .content h2 {
+    font-size: 3.5rem;
+  }
+  input {
+    max-width: 100%;
+  }
+  .result {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+}
